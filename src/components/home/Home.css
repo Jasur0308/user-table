@@ -1,0 +1,78 @@
+.users__table {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    transition: .5s;
+    border-collapse: collapse; /* Ensures borders between cells collapse into a single border */
+}
+
+.table__heading tr {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.table__row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    transition: .4s;
+    border-radius: 10px;
+    background-color: #fff; /* Default row background */
+}
+
+.table__row:nth-child(even) {
+    background-color: #e9e9e9; /* Light background for even rows */
+}
+
+.table__row:hover {
+    background-color: #f1f1f1; /* Slightly darker background on hover */
+    transform: scale(1.01);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px;
+}
+
+.table__heading th, .table__main td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Ensure there’s padding around the content */
+    text-align: center;
+}
+
+.table__heading th {
+    background-color: #f8f8f8; /* Light background for header */
+    font-weight: bold;
+}
+
+.table__title, .name, .email, .id {
+    font-family: "Quicksand", sans-serif;
+    color: #333;
+}
+
+.table__title {
+    font-size: 22px; /* Slightly smaller font size for header */
+}
+
+.name, .email, .id {
+    font-size: 18px; /* Smaller font size for table rows */
+}
+
+.email {
+    font-style: italic;
+    color: #666; /* Slightly lighter color for email */
+}
+
+.table__heading th, .table__main td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
